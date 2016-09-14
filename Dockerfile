@@ -1,11 +1,9 @@
-FROM hub.zbjwork.com/library/centos:latest
+FROM centos:latest
 
-MAINTAINER LUOPENG "luopeng@zbj.com"
+MAINTAINER icanfly "lpwork@foxmail.com"
 
 #RUN yum install -y vim
 
-ADD hello.txt /home/work/hello.txt
-
-VOLUME ["/data/www/java/work"]
+ADD hello.txt /data/work/hello.txt
 
 RUN echo "OK,everything is done"
